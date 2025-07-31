@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { getRepos } from "./git.controller";
 
-const router = Router()
+const gitRouter = Router()
 
-router.route("/:workspace/repos").get(getRepos);
+gitRouter.route("/:workspace/repos").get(getRepos);
 
-export default router;
+export default gitRouter;

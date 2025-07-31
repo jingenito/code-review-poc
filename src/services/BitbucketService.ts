@@ -2,12 +2,7 @@ import axios, { AxiosInstance, AxiosError } from "axios";
 import { inject, injectable } from "inversify";
 import { ILogger } from "./LoggerService";
 import TYPES from "./types";
-
-export interface IGitService {
-  listRepos(workspace: string): Promise<unknown>;
-  listPullRequests(workspace: string, repoSlug: string): Promise<unknown>;
-  listPullRequestDiffs(workspace: string, repoSlug: string, prId: number): Promise<unknown>;
-}
+import IGitService from "./IGitService";
 
 @injectable()
 export class BitbucketService implements IGitService {
