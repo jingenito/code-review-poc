@@ -1,0 +1,12 @@
+# macOS system files
+.DS_Store
+
+# Node modules and distribution output
+node_modules/
+dist/
+
+# Package lock files
+package-lock.json
+
+# Environment variable files
+.env
